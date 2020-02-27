@@ -18,7 +18,7 @@ export class ApiService {
   constructor(protected http: HttpClient) { }
 
   /**
-   * Generates Http Options setting parameters and method
+   * Generates Http Options with parameters and the method used in the api
    *
    * @param method
    * @param params
@@ -35,6 +35,11 @@ export class ApiService {
     return httpOptions;
   }
 
+  /**
+   * Call the get method to run the request
+   * 
+   * @param httpOptions 
+   */
   protected request(httpOptions) {
     return this.http.get(url, httpOptions);
   }

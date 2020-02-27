@@ -42,6 +42,10 @@
 	border-right: none;
 }
 
+.result-box .result-list .result-item a {
+	color: #000;
+}
+
 .result-box .result-list .result-item:first-child {
 	border-top: none;
 }
