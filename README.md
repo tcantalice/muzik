@@ -1,27 +1,27 @@
 # Muzik
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+Este projeto é um desafio para a vaga de estágio em desenvolvimento na Horizon IT.
 
-## Development server
+O projeto é desenvolvido em [Angular](https://angular.io) versão 9.0.3.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A aplicação consome a API da [Last.fm](https://last.fm/api) e tem como propósito apresentar informações sobre artistas, músicas e álbuns.
 
-## Code scaffolding
+## Requisitos
+* NPM
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalação para desenvolvimento
+No diretório raiz do projeto, rodar o comando `npm install` para instalar as dependências do projeto (incluindo o @angular/cli)
 
-## Build
+## Servidor de desenvolvimento
+Após feita a instalação das dependências, ainda no diretório raiz, rodar o comando `npx ng serve`. Este comando irá iniciar um servidor para o ambiente de desenvolvimento no endereço `http://localhost:4200`.
+A cada modificação feita no código com o servidor ativo, a página será atualizada automaticamente.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+**OBS.: JAMAIS UTILIZAR ESTE SERVIDOR PARA AMBIENTE DE PRODUÇÃO**
 
-## Running unit tests
+## Build da aplicação
+Para a distribuição da aplicação é necessário rodar o comando `npx ng build`. Este comando irá gerar uma pasta `dist/` que terá todos os artefatos necessários para distribuir a aplicação.
+Utilizando a opção `--prod` os artefatos serão gerados em modo de produção.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Notas
+1. O `npx` foi utilizado pois isso evita a instalação global do framework, inserindo o `@angular/cli` como dependência de desenvolvimento no `package.json`. Utilizando o `npm i -g @angular/cli` o Angular seria instalado na máquina.
+2. O projeto foi gerado com o seguinte comando `npx @angular\cli new muzik --commit=false --routing=true -S --style=css`
