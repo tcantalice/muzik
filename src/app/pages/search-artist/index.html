@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="search-box">
+		<input class="search-bar" type="text" [formControl]="queryField" placeholder="Buscar..." (keyup.enter)="onSearch()">
+		<button (click)="onSearch()"  class="search-button">Buscar</button>
+	</div>
+	<div *ngIf="artists$ !== undefined" class="result-box">
+		<ul class="result-list">
+			<li class="result-item" *ngFor="let artist of artists$ | async">
+				<a [routerLink]="['/artist/detail']" [state]="{ artist: artist.name }">{{ artist.name }}</a>
+			</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+header {
+	background-color: tomato;
+	width: 100%;
+	color: #fff;
+	padding: 1rem 1.5rem;
+	display: flex;
+	flex-flow: row;
+}
+
+header * {
+	color: #fff;
+}
+
+header h1 {
+	height: 100%;
+	font-size: 20pt;
+}
+
+.menu {
+	margin-left: 2rem;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.menu a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: .25rem;
+	margin: 0 10px;
+}

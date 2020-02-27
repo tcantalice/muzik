@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="artist-header">
+    <h1 class="artist-name">{{ artist.name }}</h1>
+    <div class="tags">
+      <a *ngFor="let tag of tags" href="{{ tag.url }}" class="tag">#{{ tag.name }}</a>
+    </div>
+    <div class="infos">
+      <p><strong>{{ artist.stats.listeners | number }}</strong> ouvintes</p>
+      <p><strong>{{ artist.stats.playcount | number }}</strong> plays</p>
+    </div>
+  </div>
+  <div class="artist-body">
+    <div class="description">
+      <p class="biography">{{ artist.bio.content }}</p>
+    </div>
+    <h2>Top álbums</h2>
+    <div class="top-albuns">
+      <div *ngFor="let album of albuns; let i = index" class="album">
+        <h5 class="album-title">#{{ i + 1 }} - {{ album.name }}</h5>
+        <p class="album-plays"><strong>{{ album.playcount | number }}</strong> plays</p>
+      </div>
+    </div>
+    <h2>Top Músicas</h2>
+    <div class="top-tracks">
+      <div class="track">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+.artist-header .artist-name {
+	font-weight: 500;
+}
+
+.artist-header .tags {
+	text-transform: uppercase;
+}
+
+.artist-header .tags .tag {
+	color: lightgray;
+	margin-right: .25rem;
+}
+
+.artist-header .tags .tag:hover {
+	color: gray;
+}
+
+.artist-header .infos,
+.artist-header .tags {
+	margin-top: .5rem;
+}
+
+.artist-header .infos p {
+	margin-right: .5rem;	
+}
+
+.artist-body h2 {
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.artist-body .description {
+	margin: 1rem 0;
+}
+
+.artist-body .description .biography {
+	text-align: justify;
+	font-size: 12pt;
+}
+
+.artist-body .top-albuns {
+	padding: 1rem 0;
+	flex-wrap: wrap;
+}
+
+.artist-body .top-albuns .album {
+	padding: .5rem;
+	flex: 1 1 16%;
+	margin: .5rem;
+	background-color: tomato;
+	border-radius: .5rem;
+	box-shadow: 1px 1px 3px gray;
+	min-height: 7rem;
+	color: #fff;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.artist-body .top-albuns .album h5 {
+	font-size: 12pt;
+}
+
+.artist-header .infos,
+.artist-header .infos .tags,
+.artist-body .top-albuns,
+.artist-body .top-albuns .album {
+	display: flex;
+}
